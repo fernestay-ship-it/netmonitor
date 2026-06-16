@@ -17,7 +17,7 @@ LABEL description="NGINX Reverse Proxy para Net Monitor App"
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copiar la configuración personalizada
-COPY default.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Exponer puerto HTTP
 EXPOSE 80
