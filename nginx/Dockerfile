@@ -14,10 +14,10 @@ LABEL maintainer="docente-iny1105@duoc.cl"
 LABEL description="NGINX Reverse Proxy para Net Monitor App"
 
 # Eliminar la configuración por defecto de NGINX
-RUN rm /etc/nginx/conf.d/default.conf
+RUN rm /etc/nginx/nginx.conf
 
 # Copiar la configuración personalizada
-COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 # Exponer puerto HTTP
 EXPOSE 80
